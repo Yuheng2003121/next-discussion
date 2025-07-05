@@ -1,0 +1,10 @@
+[[plugins]]
+  package = "netlify-plugin-cache-nextjs"
+
+[build]
+  command = "npm run build"
+  publish = ".next/server/pages"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
